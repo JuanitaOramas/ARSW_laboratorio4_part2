@@ -4,6 +4,9 @@
 
 # Componentes y conectores - Parte I.
 
+---
+**Integrantes: Wilson Delgado y Juanita Oramas**
+
 El ejercicio se debe traer terminado para el siguiente laboratorio (Parte II).
 
 #### Middleware- gestión de planos.
