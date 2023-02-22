@@ -20,6 +20,7 @@ public class RedundancyFilter implements Filter {
         for (Point p:  arrayPro){
             Tuple Tupla2 = new Tuple<>(p.getX(),p.getY());
             if (!pointExists(Tupla2)){
+                myPoints.add(Tupla2);
                 arrayFinal.add(new Point(p.getX(), p.getY()));
             }
         }
@@ -30,8 +31,7 @@ public class RedundancyFilter implements Filter {
 
     public boolean pointExists(Tuple t){
         for (Tuple<Integer,Integer> tuple: myPoints){
-//            if (tuple.equals(t)){return true;}
-            if (tuple.getElem1() == t.getElem1() && tuple.getElem2() == tuple.o2){return true;}
+            if (tuple.getElem1() == t.getElem1() && tuple.getElem2() == t.getElem2()){return true;}
         }
         return false;
     }
