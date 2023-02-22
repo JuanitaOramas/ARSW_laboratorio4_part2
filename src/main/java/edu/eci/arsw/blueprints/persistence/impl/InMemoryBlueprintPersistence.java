@@ -61,8 +61,6 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence{
             if (b.getAuthor().equals(author)){
                 myBlueprints.add(b);
             }
-
-
         }
 
         return myBlueprints;
